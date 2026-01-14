@@ -12,26 +12,26 @@ class Fixed
 
 	public:
 		Fixed();
-		Fixed(const int n);
-		Fixed(const float n);
-		Fixed(const Fixed &src);
+		Fixed(const int x);
+		Fixed(const float x);
+		Fixed(const Fixed &source);
 		~Fixed();
 
-		Fixed	&operator=(const Fixed &rhs);
+		Fixed	&operator=(const Fixed &righthand);
 		int		getRawBits(void) const;
-		void	setRawBits(int const raw);
+		void	setRawBits(int const set);
 		float	toFloat(void) const;
 		int		toInt(void) const;
-		bool	operator>(const Fixed &rhs) const;
-		bool	operator<(const Fixed &rhs) const;
-		bool	operator>=(const Fixed &rhs) const;
-		bool	operator<=(const Fixed &rhs) const;
-		bool	operator==(const Fixed &rhs) const;
-		bool	operator!=(const Fixed &rhs) const;
-		Fixed	operator+(const Fixed &rhs) const;
-		Fixed	operator-(const Fixed &rhs) const;
-		Fixed	operator*(const Fixed &rhs) const;
-		Fixed	operator/(const Fixed &rhs) const;
+		bool	operator>(const Fixed &righthand) const;
+		bool	operator<(const Fixed &righthand) const;
+		bool	operator>=(const Fixed &righthand) const;
+		bool	operator<=(const Fixed &righthand) const;
+		bool	operator==(const Fixed &righthand) const;
+		bool	operator!=(const Fixed &righthand) const;
+		Fixed	operator+(const Fixed &righthand) const;
+		Fixed	operator-(const Fixed &righthand) const;
+		Fixed	operator*(const Fixed &righthand) const;
+		Fixed	operator/(const Fixed &righthand) const;
 		Fixed	&operator++(void);
 		Fixed	operator++(int);
 		Fixed	&operator--(void);
